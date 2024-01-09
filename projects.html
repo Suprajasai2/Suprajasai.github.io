@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Suprajasai Konegari</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .project-details {
+            display: none;
+            padding: 20px;
+            position: relative;
+        }
+
+        .project .project-title {
+            background-color: #D6EAF8;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-decoration: none !important;
+            display: flex;
+            justify-content: space-between;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+
+        .project .project-title .toggle-buttons {
+            display: flex;
+        }
+
+        .project .project-title .toggle-button {
+            cursor: pointer;
+            padding: 5px;
+            background-color: #3498DB;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+
+        .project .project-title:hover {
+            background-color: #D6EAF8 ;
+        }
+
+        .project {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .project:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .small-image {
+            max-width: 20px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Suprajasai Konegari</h1>
+    </header>
+ 
+<nav>
+        <ul>
+             <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="work_experience.html">Work Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="portfolio">
+        <h2 class="section-title">Projects</h2>
+        <!-- Add your projects here -->
+        <div class="project">
+            <h3 class="project-title">
+                <a href="#project1" onclick="toggleDetails('project1')">Forecasting popular YouTube content</a>
+                <div class="toggle-buttons">
+                    <button class="toggle-button" onclick="toggleDetails('project1')">+</button>
+                    <button class="toggle-button" onclick="toggleDetails('project1')">-</button>
+                </div>
+            </h3>
+            <div id="project1-details" class="project-details">
+                <ul>
+                    <li>Led a data-driven analysis to forecast popular YouTube content by leveraging a dataset of YouTube trending videos</li>
+                    <li>Made use of Decision Tree models to identify key factors influencing video popularity and viewership trends</li>
+                    <li>Employed Random Forest, XGBoost, and Tuned XGBoost algorithms to improve prediction accuracy and handle feature importance.</li>
+                    <li>Provided valuable insights for content creators and digital marketers in understanding video success metrics.</li>
+                </ul>
+                <img src="C:\Users\91628\Downloads\ssa.jpg" alt="Project 1">
+            </div>
+        </div>
+
+        <div class="project">
+            <h3 class="project-title">
+                <a href="#project2" onclick="toggleDetails('project2')">Music Management System</a>
+                <div class="toggle-buttons">
+                    <button class="toggle-button" onclick="toggleDetails('project2')">+</button>
+                    <button class="toggle-button" onclick="toggleDetails('project2')">-</button>
+                </div>
+            </h3>
+            <div id="project2-details" class="project-details">
+                <ul>
+                    <li>Designed and implemented the SQL database schema to store music metadata and user profiles.</li>
+                    <li>Developed a Python-based Graphical User Interface for the system, enabling music cataloging, playlist management, and user interactions.</li>
+                    <li>Enhanced user experience and streamlined music organization. The addition of the graphical user interface aims to provide a visually intuitive platform for users to interact seamlessly with the Music Management System.</li>
+                </ul>
+                <img src="C:\Users\91628\Downloads\Screenshot (1176).png" alt="Project 2">
+            </div>
+        </div>
+
+        <div class="project">
+            <h3 class="project-title">
+                <a href="#project3" onclick="toggleDetails('project3')">Stock Market Prediction</a>
+                <div class="toggle-buttons">
+                    <button class="toggle-button" onclick="toggleDetails('project3')">+</button>
+                    <button class="toggle-button" onclick="toggleDetails('project3')">-</button>
+                </div>
+            </h3>
+            <div id="project3-details" class="project-details">
+                <p>Engineered an advanced Stock Market Prediction system leveraging Machine Learning algorithms such as Linear Regression and Decision Trees; achieved an accuracy of 92% in forecasting future stock prices, empowering effective investment strategies.</p>
+                <img class="small-image" src="C:\Users\91628\Downloads\IMG_1114.jpg" alt="Project 3">
+                <img class="small-image" src="C:\Users\91628\Downloads\IMG_1113.jpg" alt="Project 3.1">
+            </div>
+        </div>
+
+        <div class="project">
+            <h3 class="project-title">
+                <a href="#project4" onclick="toggleDetails('project4')">Object detection from a video captured by an RC Aircraft using the YOLO Algorithm</a>
+                <div class="toggle-buttons">
+                    <button class="toggle-button" onclick="toggleDetails('project4')">+</button>
+                    <button class="toggle-button" onclick="toggleDetails('project4')">-</button>
+                </div>
+            </h3>
+            <div id="project4-details" class="project-details">
+                <p>Spearheaded a project to assess the performance of the YOLO algorithm in real-time object detection from RC aircraft video footage; demonstrated its effectiveness for applications such as aerial surveillance and monitoring, achieving an accuracy rate of 96%, and reduced processing time by 50%.</p>
+                <img src="C:\Users\91628\Downloads\IMG_1143 (1).jpg" alt="Project 4">
+                 <img src="C:\Users\91628\Downloads\IMG_1144 (1).jpg" alt="Project 4">
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <script>
+        function toggleDetails(projectId) {
+            var details = document.getElementById(projectId + '-details');
+            details.style.display = (details.style.display === 'none' || details.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Back to Home</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience - Suprajasai Konegari</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+     @keyframes fadeInCard {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.experience-card {
+    transform: translateZ(0);
+    perspective: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    opacity: 0;
+    animation: fadeInCard 1s forwards ease-in-out;
+}
+
+.experience-card:first-child {
+    animation-delay: 1.0s;
+}
+
+.experience-card:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+
+.experience-card:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 5px solid rgba(52, 152, 219, 0.2);
+    border-radius: 10px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.experience-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid #2077B7;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Suprajasai Konegari</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="work_experience.html">Work Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="work-experience">
+        <h1><center>Work Experience</center></h1>
+        <div class="experience-card">
+            <h2>Company: Northeastern University</h2>
+            <h2>Position: Graduate Teaching Assistant</h2>
+            <h2>Time Period: January 2024 - Present</h2>
+            <h2>Responsibilities:</h2>
+            <p>
+                <li>Course Management: Support Professor Amin Assareh in creating course content and overseeing online platforms.</li>
+                <li>Student Support: Offer mentoring sessions, address student inquiries, and uphold regular office hours for student support.</li>
+                <li>Evaluation: Contribute to grading assignments and exams, ensuring timely feedback to students during evaluations.</li>
+            </p>
+        </div>
+
+        <div class="experience-card">
+            <h2>Company: EISystems Technologies</h2>
+            <h2>Position: Data Analyst & Machine Learning Intern</h2>
+            <h2>Time Period: September 2022 - February 2023</h2>
+            <h2>Responsibilities:</h2>
+            <p>
+                <li>Efficiently managed diverse datasets using SQL for seamless database interactions, ensuring integration of data from various sources.</li>
+                <li>Actively engaged with clients to grasp specific requirements and incorporated valuable feedback into the analysis.</li>
+                <li>Implemented dashboards to visualize and communicate complex insights effectively, enhancing accessibility for both technical and non-technical stakeholders.</li>
+                <li>Engineered an advanced Stock Market Prediction system leveraging Machine Learning algorithms such as Linear Regression and Decision Trees; achieved an accuracy of 92% in forecasting future stock prices, empowering effective investment strategies.</li>
+                <li>Demonstrated advanced Python skills, utilizing Pandas, NumPy, and Matplotlib for intricate data analysis.</li>
+            </p>
+        </div>
+    </section>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Back to Home</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!-- education.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Suprajasai Konegari</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #education {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .education-card {
+            background-color: #fff;
+            margin: 20px;
+            padding: 30px; /* Adjust the padding for increased size */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            width: 45%; /* Adjust the width for side-by-side layout */
+            box-sizing: border-box;
+        }
+
+        .education-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .education-card h2,
+        .education-card p {
+            margin: 0 0 10px 0;
+        }
+
+        .education-card p span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Suprajasai Konegari</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="work_experience.html">Work Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="education">
+        <div class="education-card">
+            <h2>Northeastern University</h2>
+            <p><span>Location:</span> Boston, MA</p>
+            <p><span>Degree:</span> Master of Science in Data Science</p>
+            <p><span>Time Period:</span> September 2023 - December 2025</p>
+            <p><span>GPA:</span> 3.5</p>
+        </div>
+
+        <div class="education-card">
+            <h2>Jawaharlal Nehru Technological University</h2>
+            <p><span>Location:</span> Hyderabad, Telangana</p>
+            <p><span>Degree:</span> Bachelor of Technology in Electronics and Communication</p>
+            <p><span>Time Period:</span> August 2019 - May 2023</p>
+            <p><span>GPA:</span> 9.14</p>
+        </div>
+    </section>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Back to Home</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
